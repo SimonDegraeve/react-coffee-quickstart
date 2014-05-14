@@ -1,12 +1,12 @@
 {
-  "name": "react-quickstart",
-  "version": "0.0.0",
-  "description": "React project",
-  "main": "./server.js",
-  "browser": "./client.js",
+  "name": "react-coffee-quickstart",
+  "version": "0.0.1",
+  "description": "My React/CoffeeScript project",
+  "main": "./server.coffee",
+  "browser": "./client.coffee",
   "browserify": {
     "transform": [
-      ["reactify", {"harmony": true}]
+      ["cjsxify"]
     ]
   },
   "dependencies": {
@@ -14,12 +14,13 @@
     "react-async": "~0.9.1",
     "react-router-component": "~0.18.2",
     "express": "~4.1.1",
-    "node-jsx": "~0.10.0",
+    "node-cjsx": "~0.1.0",
     "superagent": "~0.18.0",
-    "fibers": "~1.0.1"
+    "fibers": "~1.0.1",
+    "coffee-script": "~1.7.0"
   },
   "devDependencies": {
-    "reactify": "~0.13.1",
+    "cjsxify": "~0.2.3",
     "envify": "~1.2.0",
     "browserify": "~3.44.2",
     "connect-browserify": "~2.0.1",
@@ -28,9 +29,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "supervisor -i node_modules -e js,jsx server.js",
+    "start": "supervisor -i node_modules -e coffee,cjsx server.coffee",
     "build": "NODE_ENV=production browserify ./ | uglifyjs -cm 2>/dev/null > ./assets/bundle.js",
-    "start-prod": "NODE_ENV=production node server.js",
+    "start-prod": "NODE_ENV=production coffee --nodejs server.coffee",
     "clean": "rm -f ./assets/bundle.js"
   },
   "author": "",

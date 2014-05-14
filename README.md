@@ -1,6 +1,6 @@
-# react-quickstart
+# react-coffee-quickstart
 
-A minimal React project template which combines:
+A minimal React/CoffeeScript project template which combines:
 
   * [react-router-component][] to provide HTML5 History routing and navigation
 
@@ -24,12 +24,12 @@ your specific needs and taste:
 
     .
     ├── assets
-    ├── client.js
+    ├── client.coffee
     ├── package.json
-    └── server.js
+    └── server.coffee
 
-Directory `assets` is served under `/assets` URL, `client.js` module contains UI
-code while `server.js` — HTTP server which serves pre-rendered React components,
+Directory `assets` is served under `/assets` URL, `client.coffee` module contains UI
+code while `server.coffee` — HTTP server which serves pre-rendered React components,
 assets and provide a stub for a REST API.
 
 ## Development workflow
