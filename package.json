@@ -1,7 +1,7 @@
 {
   "name": "react-coffee-quickstart",
-  "version": "0.0.1",
-  "description": "My React/CoffeeScript project",
+  "version": "0.0.0",
+  "description": "React/CoffeeScript project",
   "main": "./server.coffee",
   "browser": "./client.coffee",
   "browserify": {
