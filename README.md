@@ -1,6 +1,6 @@
 # react-coffee-quickstart
 
-A minimal React/CoffeeScript project template which combines:
+A minimal React/CoffeeScript project template (transforms into CoffeeScript fron [react-quickstart](https://github.com/andreypopp/react-quickstart)) which combines:
 
   * [react-router-component][] to provide HTML5 History routing and navigation
 
