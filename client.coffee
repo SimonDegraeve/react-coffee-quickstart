@@ -1,7 +1,6 @@
 # @cjsx React.DOM
 
 React       = require("react")
-ReactMount  = require("react/lib/ReactMount")
 ReactAsync  = require("react-async")
 ReactRouter = require("react-router-component")
 superagent  = require("superagent")
@@ -10,8 +9,6 @@ Pages       = ReactRouter.Pages
 Page        = ReactRouter.Page
 NotFound    = ReactRouter.NotFound
 Link        = ReactRouter.Link
-
-ReactMount.allowFullPageRender = true
 
 MainPage = React.createClass
   render: ->
