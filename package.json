@@ -14,7 +14,7 @@
     "react-async": "~0.9.1",
     "react-router-component": "~0.18.2",
     "express": "~4.1.1",
-    "node-cjsx": "~0.1.1",
+    "node-cjsx": "~0.1.2",
     "superagent": "~0.18.0",
     "fibers": "~1.0.1",
     "coffee-script": "~1.7.0"
